@@ -1,0 +1,17 @@
+<html>
+
+<head>
+    <title>Books</title>
+</head>
+
+<body>
+    <pre id="json"></pre>
+
+    <script type="text/javascript">
+        var books = JSON.stringify('{{books}}', null, 4);
+        console.log('books: ' + books);
+        document.getElementById("json").innerHTML = books;
+    </script>
+</body>
+
+</html>

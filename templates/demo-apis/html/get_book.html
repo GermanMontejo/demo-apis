@@ -1,0 +1,16 @@
+<html>
+
+<head>
+    <title>GET Request</title>
+</head>
+
+<body>
+    <form action="{% url 'demo_apis:get_book' %}" method="GET">
+        Title:
+        <br>
+        <input type="text" name="title" id="title" placeholder="Enter book title here...">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

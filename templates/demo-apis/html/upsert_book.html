@@ -1,0 +1,13 @@
+<html>
+
+<head>
+    <title>New Book</title>
+</head>
+<body>
+    <form action="{% url 'demo_apis:upsert_book' %}" method="post">
+        {% csrf_token %}
+        {{ data.as_p }}
+        <button name="Submit">Submit</button>
+    </form>
+</body>
+</html>
